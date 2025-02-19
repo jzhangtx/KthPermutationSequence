@@ -26,7 +26,7 @@ std::string GetKthPermutation(int n, int k)
     if (n > 62)
         throw std::runtime_error("n is too big! It should be 62 or smaller!");
 
-    std::string str(n, '0');
+    std::string str(n, '1');
     for (unsigned char i = 0; i < static_cast<unsigned char>(n); ++i)
     {
         if (i < 10)
