@@ -23,7 +23,7 @@ void GetPermutations(std::string& str, size_t index, std::vector<std::string>& r
 
 std::string GetKthPermutation(int n, int k)
 {
-    if (n > 62)
+    if (n > 61)
         throw std::runtime_error("n is too big! It should be 62 or smaller!");
 
     std::string str(n, '1');
@@ -55,7 +55,7 @@ int main()
         if (n == 0)
             break;
 
-        std::cout << "Which permutation you want? ";
+        std::cout << "Which permutation do you want? ";
         int k;
         std::cin >> k;
 
